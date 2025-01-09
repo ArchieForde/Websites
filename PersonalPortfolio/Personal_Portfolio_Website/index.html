@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Access Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Terminal Window -->
+    <div class="terminal">
+        <p id="terminal-text">Welcome to Archie Fordes Portfolio Terminal</p>
+        <p id="input-text">
+            Enter My Portfolio. 
+            Type the secret password (Enter) : <span id="typed-text"></span><span id="cursor">_</span>
+        </p>
+        <div id="terminal-output"></div>
+
+        <input type="text" id="hidden-input" style="opacity: 0; position: absolute; z-index: -1;" autofocus>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

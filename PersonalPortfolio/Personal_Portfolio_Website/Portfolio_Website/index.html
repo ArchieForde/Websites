@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0cb876ebf.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="navbar">
+            <a href="#home"><i class="fa-solid fa-house"></i></a>
+            <a href="#about" ><i class="fa-solid fa-user"></i></a>
+            <a href="#experience"><i class="fa-solid fa-code-branch"></i></a>
+            <a href="#projects"><i class="fa-solid fa-code"></i></a>
+            <a href="#contact"><i class="fa-solid fa-address-card"></i></a>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <canvas id="canvas" style="background: #111;"></canvas>
+        <div class="intro-container">
+            <div id="terminal" class="terminal-box">
+                <span id="terminal-text"></span>
+                <span id="cursor"></span>
+            </div>
+                <div class="intro-text-box">
+                    <p>I am currently completing my degree in Computer Science with Software Engineering, and I have a keen interest in Cyber Security. I am passionate about learning new technologies and applying them to solve real-world problems. Explore my projects and experiences to know more about my journey.</p>
+                </div>
+                <div class="intro-buttons">
+                    <button id="toggle-CV" class="CV-btn" onclick="">View My CV</button>
+                    <button id="toggle-intro" class="Talk_More-btn" onclick="scrollToContact()">Talk More</button>
+                </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/archie-forde-234097265/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ArchieForde" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-box">
+                <h3>Introduction</h3>
+                <p>I am a dedicated and passionate Cyber Security Engineer currently completing my degree in Computer Science with a specialization in Software Engineering. My enthusiasm for technology drives me to constantly learn and innovate.</p>
+            </div>
+            <div class="about-box">
+                <h3>Background</h3>
+                <p>I am pursuing my degree at The University of Hull, where I have developed a strong foundation in computer science principles and have gained hands-on experience in software development. I am also currently studying for the Google professional Cyber Security Certification to help gain a solid understanding in cybersecurity, enhancing my knowledge in this critical field. Then i shall use that knowledge to study for the CompTIA Security + certification.</p>
+            </div>
+            <div class="about-box">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Programming Languages: Python, C#,  C++</li>
+                    <li>Web Development: HTML, CSS, Javascript </li>
+                    <li>Database Management: MySQL</li>
+                    <li>Tools and Technologies: Git, Nmap, Linux command line, BeautifulSoup</li>
+                    <li>Soft Skills: Problem-solving, Team collaboration, Effective communication</li>
+                </ul>
+            </div>
+            <div class="about-box">
+                <h3>Interests</h3>
+                <p>My professional interests include cybersecurity and artificial intelligence. In my free time, I enjoy creating my own projects, furthering my knowledge by reading relevant books, staying updated with the latest security trends by reading the TLDR newsletter and I also frequently complete modules and labs on Hack The Box, Codecademy and LeetCode, the modules give me a deeper understanding on cybersecurity concepts while the labs give me hands-on practice applying those cybersecurity concepts. I would like to start participating in Capture The Flags and Hackathons.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">June 2024</div>
+                <div class="timeline-content">
+                    <h3>Internship Start</h3>
+                    <p>Began an internship focused on developing a prototype AI-powered NLP model for document extraction and query response generation.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">June–July 2024</div>
+                <div class="timeline-content">
+                    <h3>Research & Planning</h3>
+                    <p>Conducted research on NLP frameworks, tools, and datasets. Collaborated with team members to design a system architecture tailored to the business's document database.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">July–August 2024</div>
+                <div class="timeline-content">
+                    <h3>Prototype Development</h3>
+                    <p>Built a functional prototype leveraging NLP algorithms to extract and structure key data from business documentation. Integrated a query system to enable users to search and receive contextually relevant responses.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">August 2024</div>
+                <div class="timeline-content">
+                    <h3>Security Applications</h3>
+                    <p>While working on the NLP prototype, I gained exposure to how sensitive business data is stored, accessed, and processed securely. Considered security implications, such as protecting user queries and responses from unauthorized access.</p>
+                    <p>Developed an understanding of cybersecurity best practices, including data encryption, secure APIs, and access control, which are vital in safeguarding information retrieval systems.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">September 2024</div>
+                <div class="timeline-content">
+                    <h3>Showcase to Management</h3>
+                    <p>Presented the prototype to senior executives, demonstrating its ability to streamline information retrieval, improve decision-making processes and not fall behind in Artfiical implementation in business. Received positive feedback and suggestions for future iterations.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">September 2024</div>
+                <div class="timeline-content">
+                    <h3>Internship Completion</h3>
+                    <p>I finalized documentation and helped provide relevant recommendations for advancing the prototype into production, with considerations for securing the data pipeline and ensuring compliance with industry security standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <p>Coming soon...</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>Feel free to reach out to discuss career opportunities, projects, or collaborations!</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:archieforde18@gmail.com">archieforde18@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/archie-forde-234097265/" target="_blank">linkedin.com/ArchieForde</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/ArchieForde" target="_blank">github.com/archie-forde</a></li>
+                </ul>
+            </div>
+    
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form id="contact-form" action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="#home" class="footer-name">Archie Forde</a>
+            <nav class="footer-nav">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="https://github.com/ArchieForde" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/archie-forde-234097265/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

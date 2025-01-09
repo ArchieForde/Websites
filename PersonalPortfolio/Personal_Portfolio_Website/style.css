@@ -1,0 +1,55 @@
+
+body {
+    background-color: black;
+    color: #00ff00; 
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal {
+    background-color: #000;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+#input-text {
+    margin-top: 20px;
+}
+
+#typed-text {
+    display: inline;
+    color: #00ff00;
+}
+
+#cursor {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background-color: #00ff00;
+    animation: blink 0.8s infinite step-end;
+}
+
+#terminal-output {
+    margin-top: 20px;
+    color: #00ff00;
+    white-space: pre-line;
+}
+
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
+}
